@@ -4,10 +4,10 @@
   "features": [
     {
       // Should we automatically realign elements under the HP bar? [Available values: true/false]
-      // Original positions - Weight:  -30,15 Caps: 60,15 Cores: 215,15 Clock: 250,15 
+      // Original positions - Weight:  -30,15 Caps: 60,15 Cores: 215,15 Clock: 250,15
       // DISABLE THIS IF YOU WANT TO SET A CUSTOM POSITIONS FOT LEFT SIDE WIDGETS (Currencies/Cores/Weight/Clock)
       "autoAlignLeftGroup": true,
-      // At which percentage the thirst bars should be hidden. Must be a ranged number between 0 and 1, 
+      // At which percentage the thirst bars should be hidden. Must be a ranged number between 0 and 1,
       // Setting this to 100 makes it stay forever.  [Default game value: 0.2 Maximum value: 100]
       "thirstBarsPercentIndefiniteShow": 0.2,
       // Whether to show survival icons or not [Available values: true/false]
@@ -15,13 +15,13 @@
       // Debug stuff
       "showDebugInfo": false,
       //This subsection defines specific widget settings, as well as the on-screen coordinates for the HUD elements. All positions are relative to the parent containers. Change it only if you have to.
-      // You can set the scale of each widget elements, if you do not like their default sizes. 
+      // You can set the scale of each widget elements, if you do not like their default sizes.
       "widgets": [
         {
           "weight": {
             // Whether to display the player's current carry weight. [Available values: true/false]
             "enabled": true,
-            // POSITIONING 
+            // POSITIONING
             "x": -30,
             "y": 15,
             "scale": 1
@@ -32,7 +32,7 @@
             // Which currencies to show, separated by ';' [Available values "caps", "bullion", "scrips", "stamps", "tadpole", "possum", "supplies", "perks"]
             // You can change the order of currencies too. Type your desired order separated by ';'
             "showOnly": "caps;bullion;stamps;scrips;perks;tadpole;possum;supplies",
-            // Should the icons be colored or mono?  [Available values: true/false]  
+            // Should the icons be colored or mono?  [Available values: true/false]
             "coloredIcons": true,
             // POSITIONING
             // Whether to show icons vertically or hortizonally [Available values: true/false]
@@ -67,7 +67,7 @@
           "weaponcond": {
             //Whether to show the condition of the currently equipped weapon. [Available values: true/false]
             "enabled": true,
-            // You can enable weapon name display. If you disable this setting, you'll only see a percentage indicator, e.g., (12.5%). 
+            // You can enable weapon name display. If you disable this setting, you'll only see a percentage indicator, e.g., (12.5%).
             "showNames": true,
             // By default, with weapon name display enabled, the widget shows the full name. You can use shortened names to display only the weapon name itself, without legendaries.
             // It works only in some languages for now. Not in english.
@@ -92,10 +92,10 @@
           // Label is a text displayed on the screen
           // valuecolor, labelcolor are optional. they sets a color on counter and label fields
           // =============================================================================================================================================================================================================== //
-          // You need to create an appropriate regex rule for each item. I assume you know how to write regular expressions. Visit https://regex101.com/ if you’re looking for a testing tool. 
+          // You need to create an appropriate regex rule for each item. I assume you know how to write regular expressions. Visit https://regex101.com/ if you’re looking for a testing tool.
           // If you’re not familiar with this, unfortunately I don’t have time to teach you. You can also use AI tools like chatGPT to generate AS3 regex patterns with the parameters you want, and test it on the site above.
           // regex flags are always placed after the '/' sign. Eg "/Simpak: Super/i" will match and count all Superstimpaks from your inventory. You can even create a regex that will
-          // count only standard Stimpakss and Super, and exclude Diluted. 
+          // count only standard Stimpakss and Super, and exclude Diluted.
           // =============================================================================================================================================================================================================== //
           "itemmonitor": {
             "enabled": true,
@@ -178,7 +178,7 @@
       "hunger": true,
       //Enables segmentated thirst bar. [Available values: true/false]
       "thirst": true,
-      //Determines the visual style for each segment widget. Available values are "single" (one segment at 20%) and "full" (four segments every 20%).  
+      //Determines the visual style for each segment widget. Available values are "single" (one segment at 20%) and "full" (four segments every 20%).
       "style": [
         {
           "health": "single",
