@@ -438,7 +438,7 @@
     "delay": 25,
     "configs": [
       {
-        "README": "READ DESCRIPTION ON NEXUSMODS BEFORE ENABLING MULTIPLE SCRAP CONFIGS",
+        "README": "READ DESCRIPTION ON NEXUS MODS BEFORE ENABLING MULTIPLE SCRAP CONFIGS",
         "enabled": true,
         "scrapFavorite": false,
         "scrapEquipped": false,
@@ -470,7 +470,7 @@
         "accountName": "none"
       },
       {
-        "README": "READ DESCRIPTION ON NEXUSMODS BEFORE ENABLING MULTIPLE SCRAP CONFIGS",
+        "README": "READ DESCRIPTION ON NEXUS MODS BEFORE ENABLING MULTIPLE SCRAP CONFIGS",
         "enabled": false,
         "scrapFavorite": false,
         "scrapEquipped": false,
@@ -663,7 +663,7 @@
     },
     {
       "testRun": false,
-      "name": "Transfer example: Transfer all nades/mines to container",
+      "name": "Transfer example: Transfer all grenades/mines to container",
       "enabled": false,
       "debug": false,
       "showButton": true,

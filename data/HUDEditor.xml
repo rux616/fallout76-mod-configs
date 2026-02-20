@@ -121,7 +121,7 @@
                 <Y>0</Y>
             </QuickLoot>
 
-        <!--Frobber are interact prompts like unlicking locked doors and interacting with NPCs-->
+        <!--Frobber are interact prompts like unlocking locked doors and interacting with NPCs-->
             <Frobber>
                 <Scale>1</Scale>
                 <X>0</X>
@@ -184,7 +184,7 @@
                 <Y>0</Y>
             </LevelUpAnimation>
 
-        <!--Notifications are Pop-Ups Like Sneak damage, New Radio Signels, And World Event Msg Boxes-->
+        <!--Notifications are Pop-Ups Like Sneak damage, New Radio Signals, And World Event Msg Boxes-->
             <Notification>
                 <Scale>1</Scale>
                 <X>0</X>
@@ -194,7 +194,7 @@
         <!--
                 Pop-up When Perk Activates Such as
                 Ricochet, Nerd Rage, Ect.
-                Dosnt Effect the Sound
+                Doesn't Effect the Sound
         -->
             <PerkPopUp>
                 <Scale>1</Scale>
@@ -216,7 +216,7 @@
                 <Y>0</Y>
             </ReputationUpdates>
 
-        <!-- Description of Onscreen Voicelines -->
+        <!-- Description of Onscreen Voice Lines -->
             <Subtitles>
                 <Scale>1</Scale>
                 <X>0</X>
@@ -399,7 +399,7 @@
         <EnemyHealthMeter>
             <ShowHealthPercent>false</ShowHealthPercent>
             <!--
-                Sets Postion to Either:
+                Sets Position to Either:
                 top, bottom, left, right
             -->
             <HealthPercentLocation>top</HealthPercentLocation>
@@ -472,8 +472,8 @@
     <OtherMods>
 
         <!--
-            Scale and movment options for the orginal improved healthbar mod [https://www.nexusmods.com/fallout76/mods/368]
-            Should work with Unoffical Forks
+            Scale and movement options for the original improved healthbar mod [https://www.nexusmods.com/fallout76/mods/368]
+            Should work with Unofficial Forks
             Only edits the HP% Counter not the lines on the HP.
         -->
         <ImprovedHealthBar>
@@ -499,7 +499,7 @@
         Active Effects, Emote Bubble, Stealth Meter, Perkpopup, Code Sanity Checking, and So Much More By Ms.Zelia:
         https://next.nexusmods.com/profile/MsZelia?gameId=2590
 
-        Explaination for the Standard Options Provided:
+        Explanation for the Standard Options Provided:
 
         Hide:
             True: Hide the Listed Hud Element. Same as Setting Scale to 0 but Allows You to Keep Scale Settings
@@ -662,7 +662,7 @@
                 <Crouch>false</Crouch>
             </QuickLoot>
 
-        <!--Frobber is interact prompts like unlicking locked doors and touching NPCs-->
+        <!--Frobber is interact prompts like unlocking locked doors and touching NPCs-->
             <Frobber>
                 <Hide>false</Hide>
                 <Crouch>false</Crouch>
@@ -722,7 +722,7 @@
         <!--Hides the Team Panel if You Are the Only Player on Team.-->
             <HideEmptyTeam>false</HideEmptyTeam>
         <!--
-            Enables Teamate Glow Level Tracking,
+            Enables Teammate Glow Level Tracking,
             Which is Broken Due to a Bug.
             Enabling will Darken the HP Bar.
         -->
@@ -740,7 +740,7 @@
             Shared Perk Card Indicator
             Daily Ops - Expo Indicator Text
 
-            DOSNT HIDE USER JOIN/LEAVE TEAM POPUP ONSCREEN
+            DOESN'T HIDE USER JOIN/LEAVE TEAM POPUP ONSCREEN
             use Improved Social From Ms.Zelia for that:
             https://www.nexusmods.com/fallout76/mods/2915
         -->
@@ -758,7 +758,7 @@
             Shared Perk Card Indicator
             Daily Ops - Expo Indicator Text
 
-            DOSNT HIDE USER JOIN/LEAVE TEAM POPUP ONSCREEN
+            DOESN'T HIDE USER JOIN/LEAVE TEAM POPUP ONSCREEN
             use Improved Social From Ms.Zelia for that:
             https://www.nexusmods.com/fallout76/mods/2915
 
@@ -790,14 +790,14 @@
 
         + Absolute ranges are from -100 to 100, but 00 to 50 is the highly recommended min-max.
 
-        + The Code use Some Intresting Math to Convert from Hex to RGB to Map Color
+        + The Code use Some Interesting Math to Convert from Hex to RGB to Map Color
           You Will Have to Play with it
 
         + The Code Tints the Element with the Color you Choose,
           so Try to Think of it as Mixing Paints instead of Setting a Color
 
 
-        Short Explaination for the Options:
+        Short Explanation for the Options:
 
         Enable: True/False : Enable's or Disables Recoloring of That Element
                              Must Hop Servers or Relog to Apply State Change
@@ -814,7 +814,7 @@
 
         Saturation: Color Intensity
 
-        Shout Out to Ms.Zelia for De-obfuscating All the Odd Callnames:
+        Shout Out to Ms.Zelia for De-obfuscating All the Odd Call names:
         https://next.nexusmods.com/profile/MsZelia?gameId=2590
 
     -->
@@ -918,7 +918,7 @@
                 <Saturation>0</Saturation>
             </Glow>
 
-    <!-- Teamate Hp and Other Things-->
+    <!-- Teammate Hp and Other Things-->
             <Hp>
                 <Enable>false</Enable>
                 <Hex>FFFFCB</Hex>
@@ -927,7 +927,7 @@
                 <Saturation>0</Saturation>
             </Hp>
 
-    <!-- Teamate Level Card -->
+    <!-- Teammate Level Card -->
             <Level>
                 <Enable>false</Enable>
                 <Hex>FFFFCB</Hex>
@@ -964,7 +964,7 @@
             </TeamBonus>
 
     <!--
-        Teamate Type
+        Teammate Type
         Casual, Raid, Event, Ect.
         Direct Colors vs Tints.
     -->
@@ -973,7 +973,7 @@
                 <Hex>FFFFCB</Hex>
             </TeamName>
 
-    <!-- Teamate Usernames -->
+    <!-- Teammate Usernames -->
             <UserName>
                 <Enable>false</Enable>
                 <Hex>FFFFCB</Hex>
@@ -995,7 +995,7 @@
                 <Saturation>0</Saturation>
             </QuickLoot>
 
-        <!--Frobber are interact prompts like unlicking locked doors and interacting with NPCs-->
+        <!--Frobber are interact prompts like unlocking locked doors and interacting with NPCs-->
             <Frobber>
                 <Enable>false</Enable>
                 <Hex>FFFFCB</Hex>
@@ -1053,7 +1053,7 @@
                 </No_Charge>
             </FusionCoreWarning>
 
-        <!--Notifications are Pop-Ups Like Sneak damage, New Radio Signels, ect-->
+        <!--Notifications are Pop-Ups Like Sneak damage, New Radio Signals, ect-->
             <Notification>
                 <Enable>false</Enable>
                 <Hex>FFFFCB</Hex>
@@ -1071,7 +1071,7 @@
                 <Saturation>0</Saturation>
             </RadDamageIndicator>
 
-        <!-- Description of Onscreen Voicelines -->
+        <!-- Description of Onscreen Voice Lines -->
             <Subtitles>
                 <Enable>false</Enable>
                 <Hex>FFFFCB</Hex>
@@ -1145,7 +1145,7 @@
 
         <!--
             Displayed Effects on the Bottom Right.
-            Overweight, Addiction, Mutations, Buffs, Ect.
+            Overweight, Addiction, Mutations, Buffs, Etc.
         -->
             <ActiveEffects>
                 <Enable>false</Enable>

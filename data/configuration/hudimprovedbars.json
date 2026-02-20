@@ -35,7 +35,7 @@
             // Should the icons be colored or mono?  [Available values: true/false]
             "coloredIcons": true,
             // POSITIONING
-            // Whether to show icons vertically or hortizonally [Available values: true/false]
+            // Whether to show icons vertically or horizontally [Available values: true/false]
             // autoAlignLeftGroup is disabled for this widget if this feature is enabled. Will mess up things, unless you move each item individually.
             "vertical": true,
             "x": -100,
@@ -53,7 +53,7 @@
             // Displays a clock.
             // If you see the "not synced" message — open your Pip-Boy radio to sync the time.
             // If you're still seeing this message after opening pipboy's radio a few times - it means another mod is conflicting with this feature.
-            // It will desync if you minimize the game.
+            // It will de-sync if you minimize the game.
             "enabled": true,
             // Which clock to show, separated by ';'.  [Available values "server" - server time, "local" - local time. Default is Server]
             "mode": "server;local",
@@ -84,7 +84,7 @@
             "x": 650,
             "y": 18,
             "scale": 1,
-            // Whether to show icons vertically or hortizonally [Available values: true/false, default: false]
+            // Whether to show icons vertically or horizontally [Available values: true/false, default: false]
             "vertical": false
           },
           // Monitor up to 5 items. TEST ONLY
@@ -92,10 +92,10 @@
           // Label is a text displayed on the screen
           // valuecolor, labelcolor are optional. they sets a color on counter and label fields
           // =============================================================================================================================================================================================================== //
-          // You need to create an appropriate regex rule for each item. I assume you know how to write regular expressions. Visit https://regex101.com/ if you’re looking for a testing tool.
-          // If you’re not familiar with this, unfortunately I don’t have time to teach you. You can also use AI tools like chatGPT to generate AS3 regex patterns with the parameters you want, and test it on the site above.
-          // regex flags are always placed after the '/' sign. Eg "/Simpak: Super/i" will match and count all Superstimpaks from your inventory. You can even create a regex that will
-          // count only standard Stimpakss and Super, and exclude Diluted.
+          // You need to create an appropriate regex rule for each item. I assume you know how to write regular expressions. Visit https://regex101.com/ if you're looking for a testing tool.
+          // If you're not familiar with this, unfortunately I don't have time to teach you. You can also use AI tools like chatGPT to generate AS3 regex patterns with the parameters you want, and test it on the site above.
+          // regex flags are always placed after the '/' sign. Eg "/Stimpak: Super/i" will match and count all super stimpaks from your inventory. You can even create a regex that will
+          // count only standard Stimpaks and Super, and exclude Diluted.
           // =============================================================================================================================================================================================================== //
           "itemmonitor": {
             "enabled": true,
@@ -105,11 +105,11 @@
             "scale": 1,
             "valueprefix": "",
             "items": [
-              // This example matches Superstimpaks. English only
+              // This example matches Super stimpaks. English only
               {
                 "enabled": true,
                 "pattern": "/Stimpak: Super/",
-                "label": "Superstimpak",
+                "label": "Super stimpak",
                 "valuecolor": "#66ACB7",
                 "labelcolor": "#FFFFCA"
               },
@@ -172,11 +172,11 @@
   //Controls the visibility and display style of bar segments
   "segments": [
     {
-      //Enables segmentated health bar. [Available values: true/false]
+      //Enables segmented health bar. [Available values: true/false]
       "health": true,
-      //Enables segmentated hunger bar. [Available values: true/false]
+      //Enables segmented hunger bar. [Available values: true/false]
       "hunger": true,
-      //Enables segmentated thirst bar. [Available values: true/false]
+      //Enables segmented thirst bar. [Available values: true/false]
       "thirst": true,
       //Determines the visual style for each segment widget. Available values are "single" (one segment at 20%) and "full" (four segments every 20%).
       "style": [
@@ -193,7 +193,7 @@
     {
       //Whether to show percentage  near health bar. [Available values: true/false]
       "health": true,
-      //Whether to show the original bethesda's percentage near health bar. [Available values: true/false. Setting this to true disables mods's health percentage info. if the percentage disappears completely, you have old HUDMenu (chatmod?)]
+      //Whether to show the original bethesda's percentage near health bar. [Available values: true/false. Setting this to true disables mods's health percentage info. if the percentage disappears completely, you have old HUDMenu (ChatMod?)]
       "bethhealth": false,
       //Whether to show percentage  near hunger bar. [Available values: true/false]
       "hunger": true,

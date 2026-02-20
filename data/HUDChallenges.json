@@ -369,7 +369,7 @@
 
   /* Custom color options:
     All displayData options: "showVersion", "showHUDMode", "showRenderTime"...
-    All challange options: daily, weekly, events, seasonal, character, survival, combat, social, world, fishing, burning_springs
+    All challenge options: daily, weekly, events, seasonal, character, survival, combat, social, world, fishing, burning_springs
     All events options: mutatedEvent, publicEvent, worldEvent, caravan
     Any other string that can be used in "text:..." or "separator:..." displayData options
 
