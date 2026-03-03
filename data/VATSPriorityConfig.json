@@ -10,7 +10,8 @@
     "textColor": "0xffffff",
     "textShadow": false,
     "hideResistances": false,
-    "hideButtons": false
+    "hideButtons": false,
+    "tieToHUDOpacity": false // added in v1.2.1
   },
 
   "disabled": false,
