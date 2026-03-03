@@ -23,17 +23,6 @@
             <Sound>UIPerkIdiotSavantLAYERfemale</Sound>
         </StartupMsg>
 
-        <!--
-            Message Verifying the Mod is Working
-            on Hud Load.
-            Leave the Sound Section Empty if You Want to Disable Sound
-        -->
-        <StartupMsg>
-            <Enable>true</Enable>
-            <Delay>60000</Delay>
-            <Sound>UIPerkIdiotSavantLAYERfemale</Sound>
-        </StartupMsg>
-
         <!--Settings for HUD Editor WaterMark in the Upper Right-->
         <WaterMark>
             <!--Settings for Default HUD Editor WaterMark-->
@@ -67,7 +56,7 @@
 
         <!-- Direction and Map Marker Indicator -->
             <Compass>
-                <Scale>1</Scale>
+                <Scale>0.8</Scale>
                 <X>0</X>
                 <Y>0</Y>
             </Compass>
@@ -81,8 +70,8 @@
 
         <!--Top Right List of Active Quests Tagged in Pipboy Questlog-->
             <QuestTracker>
-                <Scale>1</Scale>
-                <X>0</X>
+                <Scale>0.75</Scale>
+                <X>29</X>
                 <Y>0</Y>
             </QuestTracker>
 
@@ -95,11 +84,11 @@
 
         <!-- List of Players on Your Team-->
             <TeamPanel>
-                <Scale>1</Scale>
-                <X>0</X>
-                <Y>0</Y>
+                <Scale>0.8</Scale>
+                <X>160</X>
+                <Y>160</Y>
                 <PowerArmor>
-                    <Scale>1</Scale>
+                    <Scale>0.8</Scale>
                     <X>0</X>
                     <Y>0</Y>
                 </PowerArmor>
@@ -141,7 +130,7 @@
 
         <!-- quest/event complete/rewards list -->
             <Announce>
-                <Scale>1</Scale>
+                <Scale>0.75</Scale>
                 <X>0</X>
                 <Y>0</Y>
             </Announce>
@@ -272,8 +261,8 @@
         -->
             <ActiveEffects>
                 <Scale>1</Scale>
-                <X>0</X>
-                <Y>0</Y>
+                <X>60</X>
+                <Y>10</Y>
                 <PowerArmor>
                     <X>0</X>
                     <Y>0</Y>
@@ -283,22 +272,22 @@
         <!-- Shows Current Amount of Ammo in Selected Gun -->
             <AmmoCount>
                 <Scale>1</Scale>
-                <X>0</X>
-                <Y>0</Y>
+                <X>62</X>
+                <Y>3</Y>
             </AmmoCount>
 
         <!-- Bar Showing Current Ap Total -->
             <APMeter>
                 <Scale>1</Scale>
-                <X>0</X>
-                <Y>0</Y>
+                <X>68</X>
+                <Y>10</Y>
             </APMeter>
 
         <!-- Grenade / Throwable Counter -->
             <ExplosiveAmmoCount>
                 <Scale>1</Scale>
-                <X>0</X>
-                <Y>0</Y>
+                <X>70</X>
+                <Y>10</Y>
                 <PowerArmor>
                     <X>0</X>
                     <Y>0</Y>
@@ -331,8 +320,8 @@
         -->
             <HungerMeter>
                 <Scale>1</Scale>
-                <X>0</X>
-                <Y>0</Y>
+                <X>68</X>
+                <Y>18</Y>
                 <PowerArmor>
                     <Scale>1</Scale>
                     <X>0</X>
@@ -346,8 +335,8 @@
         -->
             <ThirstMeter>
                 <Scale>1</Scale>
-                <X>0</X>
-                <Y>0</Y>
+                <X>68</X>
+                <Y>18</Y>
                 <PowerArmor>
                     <Scale>1</Scale>
                     <X>0</X>
@@ -397,7 +386,7 @@
 
         -->
         <EnemyHealthMeter>
-            <ShowHealthPercent>false</ShowHealthPercent>
+            <ShowHealthPercent>true</ShowHealthPercent>
             <!--
                 Sets Position to Either:
                 top, bottom, left, right
@@ -439,13 +428,13 @@
         <!-- Options for the HP % to the Right of the HP Meter. -->
             <HPpercent>
             <!-- Setting to False Removes the Hp % -->
-                <Show>true</Show>
+                <Show>false</Show>
 
             <!-- Setting to True Only Shows the HP % and Label -->
                 <OnlyShow>false</OnlyShow>
 
             <!-- Setting to True Provides Better Rounding -->
-                <Decimal>false</Decimal>
+                <Decimal>true</Decimal>
 
             <!-- Use X -385 to Set it to the Right Side -->
                 <Scale>1</Scale>
@@ -460,7 +449,7 @@
                 Show a percentage value above the thirst and hunger bars
                 For more Percent Widgets try Hud Widgets: https://www.nexusmods.com/fallout76/mods/3124
             -->
-                <ThirstHungerPercentShow>false</ThirstHungerPercentShow>
+                <ThirstHungerPercentShow>true</ThirstHungerPercentShow>
 
             <!--Prevents thirst and hunger from auto-hiding after a few seconds-->
                 <AlwaysShowThirstHunger>false</AlwaysShowThirstHunger>

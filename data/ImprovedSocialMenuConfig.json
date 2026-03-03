@@ -10,7 +10,12 @@
   "defaultSelectionJoin": true,
   "disableFriendsGrouping": false,
   "topSortFriends": [],
-  "hudModLoader": ["BuffsMeter", "QuickActions"],
+  "hudModLoader": [
+    // this is a long comment to force multi-line formatting in the json file so it is easier to edit
+    "BuffsMeter",
+    "QuickActions",
+    "HUDChallenges"
+  ],
   "delayModLoader": 30000,
   "hideVignette": false,
   "notificationHideDelay": 2500,

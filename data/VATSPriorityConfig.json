@@ -40,8 +40,8 @@
   "useTargetNames": true, // Requires HUDModLoader + HUDTools
 
   "defaultPriority": [
-    { "partName": "HEAD", "minHitChance": 1 },
-    { "partName": "TORSO", "hasCenterMasochist": true, "minHitChance": 1 },
+    { "partName": "HEAD", "minHitChance": 70 },
+    { "partName": "TORSO", "hasCenterMasochist": true, "minHitChance": 70 },
     { "minHitChance": 80 },
     { "minHitChance": 60 },
     { "minHitChance": 40 },
@@ -85,6 +85,10 @@
       { "partName": "THRUSTER", "minHitChance": 1 },
       { "partName": "EYE", "minHitChance": 1 }
     ],
+    "KILLMEISTER" /* mr handy */: [
+      { "partName": "THRUSTER", "minHitChance": 1 },
+      { "partName": "EYE", "minHitChance": 1 }
+    ],
     "ULTRACITE TERROR": [
       { "partName": "RIGHTEYE", "minHitChance": 60 },
       { "partName": "LEFTEYE", "minHitChance": 60 },
@@ -120,11 +124,18 @@
     ],
     "CARGOBOT": [{ "partName": "BOOSTER", "notCrippled": true, "minHitChance": 1 }],
     "ASSAULTRON": [
+      { "partName": "HEAD", "notCrippled": true, "minHitChance": 1 },
+      { "partName": "RIGHT LEG", "notCrippled": true, "minHitChance": 1 },
+      { "partName": "LEFT LEG", "notCrippled": true, "minHitChance": 1 },
+      { "partName": "TORSO", "hasCenterMasochist": true, "minHitChance": 1 },
+      { "partName": "LEFT LEG", "minHitChance": 1 }
+    ],
+    "IMPOSTER SHEEPSQUATCH": [
       { "partName": "TORSO", "hasCenterMasochist": true, "minHitChance": 1 },
       { "partName": "RIGHT LEG", "notCrippled": true, "minHitChance": 1 },
       { "partName": "LEFT LEG", "minHitChance": 1 }
     ],
-    "IMPOSTER SHEEPSQUATCH": [
+    "HARVESTRON" /* assaultron */: [
       { "partName": "TORSO", "hasCenterMasochist": true, "minHitChance": 1 },
       { "partName": "RIGHT LEG", "notCrippled": true, "minHitChance": 1 },
       { "partName": "LEFT LEG", "minHitChance": 1 }
@@ -137,7 +148,21 @@
       { "partName": "ARM", "minHitChance": 1 }
     ],
     "RADSCORPION": [{ "partName": "FACE", "minHitChance": 1 }],
-    "DEATHCLAW": [{ "partName": "BELLY", "minHitChance": 1 }],
+    "DEATHCLAW": [
+      { "partName": "RIGHT LEG", "notCrippled": true, "minHitChance": 1 },
+      { "partName": "LEFT LEG", "notCrippled": true, "minHitChance": 1 },
+      { "partName": "BELLY", "minHitChance": 1 }
+    ],
+    "DEATHCLAW HANDLER": [
+      { "partName": "HEAD", "minHitChance": 70 },
+      { "partName": "TORSO", "hasCenterMasochist": true, "minHitChance": 70 },
+      { "minHitChance": 80 },
+      { "minHitChance": 60 },
+      { "minHitChance": 40 },
+      { "minHitChance": 20 },
+      { "minHitChance": 1 }
+    ],
+    "SCORCHBEAST": [{ "partName": "WING", "notCrippled": true }],
     "SCORCHBEAST QUEEN": [{ "partName": "WING", "notCrippled": true }],
     "MIRELURK QUEEN": [
       { "partName": "SPOUTS", "minHitChance": 1 },

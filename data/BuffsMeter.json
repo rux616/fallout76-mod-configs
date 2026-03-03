@@ -1,11 +1,11 @@
 {
   // WIDGET SETTINGS
   "x": 5,
-  "y": 100,
-  "anchor": "top", // top, bottom (Update 1.0.7)
+  "y": 930,
+  "anchor": "bottom", // top, bottom (Update 1.0.7)
   "ySpacing": -3,
   "width": 250,
-  "textSize": 18,
+  "textSize": 16,
   /* Some of the working fonts:
   "$76HandwrittenNeat_Font", "$76HandwrittenIlliterate", "$Adventure_Font", "$BerlinDemi", "$BRODY",
   "$Brush_Script_Std", "$ChowderHead", "$ConsoleFont", "$DebugTextFont", "$DotMatrix_Font", "$evaScript_Font",
@@ -71,7 +71,7 @@
   // OVERLAY MOD LOADER ONLY SETTINGS (Update 1.1.4)
   "debugKeys": false,
   "toggleVisibilityHotkey": 0,
-  "forceHideHotkey": "N-", // Update 1.1.7
+  "forceHideHotkey": "", // Update 1.1.7
   "toggleChecklistHotkey": "N+", // Update 1.2.6
 
   // EFFECT DISPLAY SETTINGS
@@ -266,13 +266,13 @@
   Data will show in order in which it is listed here, remove anything unnecessary: */
   "displayData": [
     "showVersion",
-    "showHUDMode",
+    "showHUDMode"
     //"showRenderTime",
     //"showLastUpdate",
     //"showLastConfigUpdate",
     //"showChecklist",
-    "showTime24",
-    "showServerTime24"
+    // "showTime24",
+    // "showServerTime24"
   ],
 
   /* Custom color options:
@@ -341,19 +341,23 @@
 
 
   "All" is default HUD mode (non-power armor), not all of them */
-  "HUDModesState": "hidden", // Options: hidden, shown
+  "HUDModesState": "shown", // Options: hidden, shown
   "HUDModes": [
-    "ContainerMode",
+    "All",
+    "ActivateTypeMode",
+    // "ContainerMode",
     "DialogueMode",
-    "ExamineConfirmMode",
-    "LegendaryPerksMode",
-    "MapMenu",
-    "MessageMode",
-    "PauseMode",
-    "PerksMode",
-    //"Pipboy",
+    // "ExamineConfirmMode",
+    // "LegendaryPerksMode",
+    // "Loading",
+    // "MapMenu",
+    // "MessageMode",
+    // "PauseMode",
+    // "PerksMode",
+    "Pipboy",
+    "PowerArmor",
     "RadialMenu",
-    "SelfieMode",
+    // "SelfieMode",
     "WorkshopMode"
   ]
 }

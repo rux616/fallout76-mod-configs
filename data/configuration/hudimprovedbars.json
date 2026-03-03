@@ -9,7 +9,7 @@
       "autoAlignLeftGroup": true,
       // At which percentage the thirst bars should be hidden. Must be a ranged number between 0 and 1,
       // Setting this to 100 makes it stay forever.  [Default game value: 0.2 Maximum value: 100]
-      "thirstBarsPercentIndefiniteShow": 0.2,
+      "thirstBarsPercentIndefiniteShow": 100,
       // Whether to show survival icons or not [Available values: true/false]
       "showHungerThirstIcons": true,
       // Debug stuff
@@ -31,7 +31,7 @@
             "enabled": true,
             // Which currencies to show, separated by ';' [Available values "caps", "bullion", "scrips", "stamps", "tadpole", "possum", "supplies", "perks"]
             // You can change the order of currencies too. Type your desired order separated by ';'
-            "showOnly": "caps;bullion;stamps;scrips;perks;tadpole;possum;supplies",
+            "showOnly": "caps;bullion;stamps;scrips;perks;tadpole;possum",
             // Should the icons be colored or mono?  [Available values: true/false]
             "coloredIcons": true,
             // POSITIONING
@@ -39,7 +39,7 @@
             // autoAlignLeftGroup is disabled for this widget if this feature is enabled. Will mess up things, unless you move each item individually.
             "vertical": true,
             "x": -100,
-            "y": -100,
+            "y": -80,
             "scale": 1
           },
           "cores": {
@@ -73,15 +73,15 @@
             // It works only in some languages for now. Not in english.
             "shortenNames": false,
             // Toggles visibility of the weapon icon
-            "showWeaponIcon": true,
-            "x": -60,
+            "showWeaponIcon": false,
+            "x": -7,
             "y": -95,
             "scale": 1
           },
           "stats": {
             //Whether to show the simple SPECIAL widget. [Available values: true/false]
             "enabled": true,
-            "x": 650,
+            "x": 675,
             "y": 18,
             "scale": 1,
             // Whether to show icons vertically or horizontally [Available values: true/false, default: false]
@@ -91,12 +91,16 @@
           // Pattern accepts a valid regex pattern.
           // Label is a text displayed on the screen
           // valuecolor, labelcolor are optional. they sets a color on counter and label fields
-          // =============================================================================================================================================================================================================== //
-          // You need to create an appropriate regex rule for each item. I assume you know how to write regular expressions. Visit https://regex101.com/ if you're looking for a testing tool.
-          // If you're not familiar with this, unfortunately I don't have time to teach you. You can also use AI tools like chatGPT to generate AS3 regex patterns with the parameters you want, and test it on the site above.
-          // regex flags are always placed after the '/' sign. Eg "/Stimpak: Super/i" will match and count all super stimpaks from your inventory. You can even create a regex that will
-          // count only standard Stimpaks and Super, and exclude Diluted.
-          // =============================================================================================================================================================================================================== //
+          // ======================================================================================================== //
+          // You need to create an appropriate regex rule for each item. I assume you know how to write regular
+          // expressions. Visit https://regex101.com/ if you're looking for a testing tool.
+          //
+          // If you're not familiar with this, unfortunately I don't have time to teach you. You can also use AI tools
+          // like chatGPT to generate AS3 regex patterns with the parameters you want, and test it on the site above.
+          // regex flags are always placed after the '/' sign. Eg "/Stimpak: Super/i" will match and count all super
+          // stimpaks from your inventory. You can even create a regex that will count only standard Stimpaks and
+          // Super, and exclude Diluted.
+          // ======================================================================================================== //
           "itemmonitor": {
             "enabled": true,
             "inline": true,
@@ -105,23 +109,34 @@
             "scale": 1,
             "valueprefix": "",
             "items": [
-              // This example matches Super stimpaks. English only
+              {
+                "enabled": true,
+                "pattern": "/Stimpak/",
+                "label": "Stimpaks",
+                "valuecolor": "#66ACB7",
+                "labelcolor": "#FFFFCA"
+              },
               {
                 "enabled": true,
                 "pattern": "/Stimpak: Super/",
-                "label": "Super stimpak",
+                "label": "Super Stimpaks",
                 "valuecolor": "#66ACB7",
                 "labelcolor": "#FFFFCA"
               },
-              //  This example counts treasury notes
               {
                 "enabled": true,
-                "pattern": "Treasury Note",
-                "label": "Treasury notes",
+                "pattern": "/Treasury Note/",
+                "label": "Treasury Notes",
                 "valuecolor": "#66ACB7",
                 "labelcolor": "#FFFFCA"
               },
-              // etc
+              {
+                "enabled": true,
+                "pattern": "/Wanted Poster/",
+                "label": "Wanted Posters",
+                "valuecolor": "#66ACB7",
+                "labelcolor": "#FFFFCA"
+              },
               {
                 "enabled": false,
                 "pattern": "/some regex here/",
@@ -181,7 +196,7 @@
       //Determines the visual style for each segment widget. Available values are "single" (one segment at 20%) and "full" (four segments every 20%).
       "style": [
         {
-          "health": "single",
+          "health": "full",
           "hunger": "full",
           "thirst": "full"
         }
@@ -196,9 +211,9 @@
       //Whether to show the original bethesda's percentage near health bar. [Available values: true/false. Setting this to true disables mods's health percentage info. if the percentage disappears completely, you have old HUDMenu (ChatMod?)]
       "bethhealth": false,
       //Whether to show percentage  near hunger bar. [Available values: true/false]
-      "hunger": true,
+      "hunger": false,
       //Whether to show percentage  near thirst bar. [Available values: true/false]
-      "thirst": true,
+      "thirst": false,
       //Whether to show percentage  near feral bar. [Available values: true/false]
       "feral": true,
       //Whether to show percentage  near glow bar. [Available values: true/false]

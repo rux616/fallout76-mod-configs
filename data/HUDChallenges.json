@@ -1,11 +1,11 @@
 {
   // WIDGET SETTINGS
-  "x": 1510,
-  "y": 800,
+  "x": 1514,
+  "y": 917,
   "anchor": "bottom" /* top, bottom */,
   "ySpacing": -5,
   "width": 400,
-  "textSize": 18,
+  "textSize": 16,
   /* Some of the working fonts:
     "$76HandwrittenNeat_Font", "$76HandwrittenIlliterate", "$Adventure_Font", "$BerlinDemi", "$BRODY",
     "$Brush_Script_Std", "$ChowderHead", "$ConsoleFont", "$DebugTextFont", "$DotMatrix_Font", "$evaScript_Font",
@@ -38,7 +38,7 @@
   // OVERLAY MOD LOADER ONLY SETTINGS - Improved Social Menu 1.0.4+
   "debugKeys": false,
   "toggleVisibilityHotkey": 0,
-  "forceHideHotkey": "N-", // Update 1.1.7
+  "forceHideHotkey": "n-", // Update 1.1.7
 
   // CHALLENGES & EVENTS DISPLAY SETTINGS
   "refresh": 1000,
@@ -145,7 +145,7 @@
 
   "miniSeason": {
     // Update 1.1.3
-    "hideIfInactive": false,
+    "hideIfInactive": true,
     "hideIfRewardsClaimed": false,
     "activeText": "MiniSeason end: {time} [{currentValue}/{thresholdValue}]",
     "inactiveText": "MiniSeason start: {time}"
@@ -180,7 +180,7 @@
   "smiley": {
     // Update 1.2.9
     "offsetHours": 0,
-    "hideIfVisitedThisWeek": false,
+    "hideIfVisitedThisWeek": true,
     "notVisitedText": "Smiley not visited this week ({time} left)",
     "visitedText": "Smiley visited this week ({gold}g {time} ago)"
   },
@@ -192,12 +192,12 @@
     "monthly": false, // Update 1.1.1
     "events": false,
     "seasonal": false,
-    "character": false,
-    "survival": false,
-    "combat": false,
-    "social": false,
-    "world": false,
-    "fishing": false, // Update 1.1.3
+    "character": true,
+    "survival": true,
+    "combat": true,
+    "social": true,
+    "world": true,
+    "fishing": true, // Update 1.1.3
     "burning_springs": false // 1.2.3
   },
 
@@ -208,12 +208,12 @@
     "monthly": false,
     "events": false,
     "seasonal": false,
-    "character": false,
-    "survival": false,
-    "combat": false,
-    "social": false,
-    "world": false,
-    "fishing": false,
+    "character": true,
+    "survival": true,
+    "combat": true,
+    "social": true,
+    "world": true,
+    "fishing": true,
     "burning_springs": false // 1.2.3
   },
 
@@ -313,15 +313,16 @@
   "displayData": [
     "showVersion",
     "showHUDMode",
+    "emptyspace:10",
 
-    //"showRenderTime",
-    //"showElapsedTime",
-    //"showLastConfigUpdate",
-    //"showLastEventsUpdate",
-    //"showLastChallengesUpdate",
-    //"showTime12",
-    //"showTime24",
-    //"showUTCTime",
+    // "showRenderTime",
+    // "showElapsedTime",
+    // "showLastConfigUpdate",
+    // "showLastEventsUpdate",
+    // "showLastChallengesUpdate",
+    // "showTime12",
+    // "showTime24",
+    // "showUTCTime",
 
     "showSeasonEndTime",
     "showMiniSeasonTime",
@@ -333,13 +334,10 @@
     "showMinerva",
     "emptyspace:10",
 
-    "showNuclearCodes",
-    "showSiloCooldowns",
-
-    //"showRaidXP",
-    //"showXPBar",
-    //"showScoreBar",
-    "emptyspace:10",
+    // "showRaidXP",
+    // "showXPBar",
+    // "showScoreBar",
+    // "emptyspace:10",
 
     "text:orange:DAILY ({dailyProgress}) ({dailyExpireTime})",
     "challenges:daily",
@@ -349,9 +347,9 @@
     "challenges:weekly",
     "emptyspace:10",
 
-    //"text:pink:MONTHLY ({monthlyProgress}) ({monthlyExpireTime})",
-    //"challenges:monthly",
-    //"emptyspace:10",
+    // "text:pink:MONTHLY ({monthlyProgress}) ({monthlyExpireTime})",
+    // "challenges:monthly",
+    // "emptyspace:10",
 
     "text:orange:EVENT ({eventsProgress}) ({eventsExpireTime})",
     "challenges:events",
@@ -359,12 +357,25 @@
 
     "challenges:seasonal",
 
+    "text:orange:CHALLENGES",
+    "challenges:character",
+    "challenges:survival",
+    "challenges:combat",
+    "challenges:social",
+    "challenges:world",
+    "challenges:fishing",
+    "emptyspace:10",
+
     "text:orange:EVENTS",
     "showEventTimer",
     "events:mutatedEvent",
     "events:publicEvent",
     "events:worldEvent",
-    "events:caravan"
+    "events:caravan",
+    "emptyspace:10",
+
+    "showNuclearCodes",
+    "showSiloCooldowns"
   ],
 
   /* Custom color options:
@@ -469,13 +480,15 @@
     "All" is default HUD mode (non-power armor), not all of them */
   "HUDModesState": "shown" /* Options: hidden, shown */,
   "HUDModes": [
-    "ActivateTypeMode",
-    "All",
-    //"ContainerMode",
-    //"InspectMode",
-    "MapMenu",
+    // "ActivateTypeMode",
+    // "All",
+    // "ContainerMode",
+    // "InspectMode",
+    // "Loading",
+    // "MapMenu",
     "Pipboy",
-    "PowerArmor",
+    "TerminalMode",
+    // "PowerArmor",
     //"SelfieMode",
     "WorkshopMode"
   ]
