@@ -39,16 +39,6 @@
 
   // PIPBOY SETTINGS (Update 1.1.6)
   "showAllPipboyTabs": true, // Update 1.2.0
-  "enableWidgetInPipboy": false,
-  "pipboyConfig": {
-    // screen size: 876x700
-    "x": 620,
-    "y": 60,
-    "anchor": "top",
-    "width": 250,
-    "textAlign": "right",
-    "background": false
-  },
   "pipInventoryTabNames": [
     // Update 1.2.2
     "$InventoryCategoryNew",
@@ -64,9 +54,7 @@
     "$InventoryCategoryMods",
     "$InventoryCategoryAmmo"
   ],
-
-  "enableManualPipBuffDataSync": "AUTO", // Update 1.2.2
-  "pipBuffDataSyncHotkey": 20, // Update 1.2.2
+  "quickEffectsTabHotkey": 192,
 
   // OVERLAY MOD LOADER ONLY SETTINGS (Update 1.1.4)
   "debugKeys": false,
@@ -95,8 +83,8 @@
 
   /* Types options: ALCOHOL, CHEMS, FOOD, DRINKTEA, HUNGER, MUTATION, THRIST - yes, it's a typo
   All perks effects are in CHEMS category so if you want to hide them you'll have to list them by names in hideEffects below */
-  "hideTypes": ["MUTATION", "HUNGER", "THRIST", "PERK"],
-  "showTypes": ["ALCOHOL", "FOOD", "DRINKTEA"],
+  "hideTypes": ["MUTATION", "HUNGER", "THRIST"],
+  "showTypes": ["ALCOHOL", "FOOD", "DRINKTEA", "DRINKGENERIC"],
 
   "hideEffectsState": "hidden", // Options: hidden, shown (Update 1.0.1)
   "hideEffects": [
@@ -168,7 +156,8 @@
     "enabled": true,
     "alignVertical": "bottom", // top, center, bottom
     "alignHorizontal": "left", // left, center, right
-    "height": 4
+    "height": 4,
+    "maxDuration": 600 // 1.4.0
   },
 
   "xpBar": {
@@ -236,7 +225,7 @@
   custom: list effect names or types which will be shown on top (in order)
     example: [cranberry relish", "brain bombs", "FOOD", "DRINK" ]
   property: list property name(s) to sort by
-    options: "type", "text", "durationRemaining", "duration" (Update 1.0.1)
+    options: "type", "text", "durationRemaining" (Update 1.0.1)
     example: ["durationRemaining", "text"] - first sort by durationRemaining then by text */
   "sortOrder": ["durationRemaining", "text"],
   "reverseSort": false, // ascending <=> descending
@@ -248,11 +237,7 @@
     "showLastUpdate" - last time when pipboy was open and effects were updated
     "showLastConfigUpdate" - last time when config was reloaded (either on server join or config file changed)
     "showElapsedTime" - elapsed time on server
-    "showServerTime" - current server full time, in format dd:hh:mm:ss
-    "showServerTick" - server time converted to server ticks (20/s)
     "showLastExpiredBuff" - last expired buff
-    "showServerTime12" - current server time in 12-hour format, e.g. 5:05 PM (Update 1.0.1)
-    "showServerTime24" - current server time in 24-hour format, e.g. 17:05 (Update 1.0.1)
     "showTime12" - current PC time in 12-hour format, e.g. 5:05 PM (Update 1.0.1)
     "showTime24" - current PC time in 24-hour format, e.g. 17:05 (Update 1.0.1)
     "text:color:text to display" - color can also be specified as any customColors value (Update 1.0.6)
@@ -267,12 +252,11 @@
   "displayData": [
     "showVersion",
     "showHUDMode"
-    //"showRenderTime",
-    //"showLastUpdate",
-    //"showLastConfigUpdate",
-    //"showChecklist",
-    // "showTime24",
-    // "showServerTime24"
+    // "showTime24"
+    // "showRenderTime",
+    // "showLastUpdate",
+    // "showLastConfigUpdate",
+    // "showChecklist",
   ],
 
   /* Custom color options:
@@ -295,14 +279,10 @@
     "showLastUpdate": "0xffaacc",
     "showLastConfigUpdate": "0x77eeff",
     "showElapsedTime": "0xaaaaff",
-    "showServerTick": "0xffff00",
-    "showServerTime": "0xffff00",
     "showLastExpiredBuff1": "0xff8800",
     "showLastExpiredBuff2": "0xffaa00",
     "showLastExpiredBuff3": "0xffcc00",
     "showRenderTime": "0x55ff55",
-    "showServerTime12": "0xffff00",
-    "showServerTime24": "0xffff00",
     "showTime12": "0x99ff99",
     "showTime24": "0x99ff99",
     "debuffs": "0xff0000",
