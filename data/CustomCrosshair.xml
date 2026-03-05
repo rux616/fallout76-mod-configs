@@ -46,7 +46,7 @@
         <bethesda>true</bethesda>
         <dot>
             <enable>true</enable>
-            <size>2</size>
+            <size>1</size>
         </dot>
         <circle>
             <enable>false</enable>
@@ -107,7 +107,7 @@
     <!--When aiming down iron sight-->
     <part state="SIGHT">
         <dot>
-            <enable>true</enable>
+            <enable>false</enable>
             <size>2</size>
         </dot>
         <circle>
