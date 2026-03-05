@@ -27,14 +27,14 @@
       // If you want to scale individual elements, you can do that in the "widgets" section, by adding the
       // "scaleFactor" for desired widget.
       // This setting will scale all elements, including those that don't have individual scale settings.
-      "scaleFactor": 1.0,
+      "scaleFactor": 0.9,
       // Should we automatically realign elements under the HP bar? [Available values: true/false]
       // This is needed for the widgets under the HP bar, such as weight, currencies, cores, clock,
       // because they have different widths, and if you have more than one of them enabled, they will overlap each
       // other.
       // DISABLE this if you have custom positions for these elements
       // When enabled, it will automatically align these elements to the left, on the X axis
-      "autoAlignLeftGroup": true,
+      "autoAlignLeftGroup": false,
       // By default, the bars disappear after a short time when they reach [value]>=[thirstBarsPercentIndefiniteShow]%.
       // This can be useful for players who want to keep an eye on their hunger and thirst levels without worrying
       // about the bars disappearing.
@@ -63,6 +63,15 @@
       // You can set the scale of each widget elements, if you do not like their default sizes.
       "widgets": [
         {
+          // Experience widget shows your current level and experience progress. It can also show the percentage of experience progress towards the next level,
+          // if you enable the percentage option.
+          "xp": {
+            "enabled": true,
+            "percentage": true,
+            "scaleFactor": 0.8,
+            "x": -25,
+            "y": -30
+          },
           // Shows active effects and some other stuff. Experimental.
           // This widget REQUIRES SFE, in order to work. Due the way it handles some internal stuff, Incompatible with
           // save everything mod. Sorry!
@@ -98,44 +107,49 @@
             // Whether to display the player's current carry weight. [Available values: true/false]
             "enabled": true,
             // POSITIONING
-            "x": -30,
-            "y": 15
+            "x": -25,
+            "y": -8
           },
           "currencies": {
-            //Whether to show the number of bottle caps and optionally other currencies specified in 'showonly' setting. [Available values: true/false]
+            // Whether to show the number of bottle caps and optionally other currencies specified in "showOnly"
+            // setting. [Available values: true/false]
             "enabled": true,
-            // Which currencies to show, separated by ';' [Available values "caps", "bullion", "scrips", "stamps", "tadpole", "possum", "supplies", "perks"]
+            // Which currencies to show, separated by ';' [Available values "caps", "bullion", "scrips", "stamps",
+            // "tadpole", "possum", "supplies", "perks"]
             // You can change the order of currencies too. Type your desired order separated by ';'
             "showOnly": "caps;bullion;stamps;scrips;perks;tadpole;possum",
             // Should the icons be colored or mono?  [Available values: true/false]
             "coloredIcons": true,
             // POSITIONING
             // Whether to show icons vertically or horizontally [Available values: true/false]
-            // autoAlignLeftGroup is disabled for this widget if this feature is enabled. Will mess up things, unless you move each item individually.
+            // autoAlignLeftGroup is disabled for this widget if this feature is enabled. Will mess up things, unless
+            // you move each item individually.
             "vertical": true,
-            "x": -100,
+            "x": -90,
             "y": -80
           },
           "cores": {
             // Whether to display the number of fusion cores. [Available values: true/false]
             "enabled": true,
             // POSITIONING
-            "x": 215,
-            "y": 15
+            "x": 55,
+            "y": -8
           },
           "clock": {
             // Displays a clock.
             // If you see the "not synced" message — open your Pip-Boy radio to sync the time.
-            // If you're still seeing this message after opening pipboy's radio a few times - it means another mod is conflicting with this feature.
+            // If you're still seeing this message after opening pipboy's radio a few times - it means another mod is
+            // conflicting with this feature.
             // It will de-sync if you minimize the game.
             "enabled": true,
-            // Which clock to show, separated by ';'.  [Available values "server" - server time, "local" - local time. Default is Server]
+            // Which clock to show, separated by ';'.  [Available values "server" - server time, "local" - local time.
+            // Default is Server]
             "mode": "server;local",
             // Whether to show your local time next to the server time.
             "use24hFormat": true,
             // POSITIONING
-            "x": 250,
-            "y": 15
+            "x": 110,
+            "y": -8
           },
           "weaponcond": {
             // Whether to show the condition of the currently equipped weapon. [Available values: true/false]
@@ -149,17 +163,17 @@
             "shortenNames": false,
             // Toggles visibility of the weapon icon
             "showWeaponIcon": false,
-            "x": -7,
-            "y": -95
+            "x": 22,
+            "y": -110
           },
           "stats": {
             // Whether to show the simple SPECIAL widget. [Available values: true/false]
             "enabled": true,
             // Whether to show icons vertically or horizontally [Available values: true/false, default: false]
             "vertical": false,
-            "showDiffs": true,
-            "x": 675,
-            "y": 18
+            "showDiffs": false,
+            "x": 685,
+            "y": 8
           },
           // Monitor up to 5 items. TEST ONLY
           // Pattern accepts a valid regex pattern.
@@ -177,8 +191,8 @@
           "itemmonitor": {
             "enabled": true,
             "inline": true,
-            "x": -50,
-            "y": 35,
+            "x": -45,
+            "y": 8,
             "valueprefix": "",
             "items": [
               {
