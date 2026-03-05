@@ -61,7 +61,7 @@
     "debug": false,
     "hotkey": "F5",
     "weightLabelWidth": 200,
-    "itemCardDelay": 75,
+    "itemCardDelay": 100,
     "itemCardFilters": ["WEAPON", "ARMOR", "FOOD_WATER", "AID", "JUNK", "AMMO"]
   },
   "protectionConfig": {
@@ -334,7 +334,7 @@
     "showMessage": "FULL",
     "hotkey": "N",
     "maxItems": 100,
-    "delay": 25,
+    "delay": 50,
     "configs": [
       {
         "enabled": false,
@@ -384,7 +384,7 @@
     "showMessage": false,
     "hotkey": "F",
     "maxItems": 100,
-    "delay": 25,
+    "delay": 50,
     "transferLegendaries": [1, 2, 3, 4, 5],
     "transferTaggedForSearch": true,
     "matchMode": "CONTAINS",
@@ -435,7 +435,7 @@
     "showMessage": false,
     "hotkey": "F",
     "maxItems": 100,
-    "delay": 25,
+    "delay": 50,
     "configs": [
       {
         "README": "READ DESCRIPTION ON NEXUS MODS BEFORE ENABLING MULTIPLE SCRAP CONFIGS",
