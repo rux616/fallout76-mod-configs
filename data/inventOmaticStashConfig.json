@@ -61,8 +61,7 @@
     "debug": false,
     "hotkey": "F5",
     "weightLabelWidth": 200,
-    "itemCardDelay": 100,
-    "itemCardFilters": ["WEAPON", "ARMOR", "FOOD_WATER", "AID", "JUNK", "AMMO"]
+    "itemCardDelay": 125
   },
   "protectionConfig": {
     "debug": true,
