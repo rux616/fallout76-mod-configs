@@ -89,34 +89,32 @@
 
   "hideEffectsState": "hidden", // Options: hidden, shown (Update 1.0.1)
   "hideEffects": [
+    "antacids",
+    "chameleon",
+    "confetti mess",
+    "explosive damage",
+    "fingertrap",
+    "gift bag",
+    "life giver",
+    "local practitioner",
+    "noisemaker",
     "overencumbered",
-    "team",
+    "plastic animals",
+    "polished",
+    "power armor",
     "scout",
     "so much cake",
-    "gift bag",
-    "to-go punch",
-    "noisemaker",
-    "antacids",
-    "plastic animals",
-    "confetti mess",
-    "fingertrap",
-    "explosive damage",
+    "spiritual healer",
     "stealth move",
     "stimpak",
-    "life giver",
-    "polished",
-    "local practitioner",
-    "spiritual healer",
-    "chameleon",
-    "vanguard",
-    "power armor"
+    "team",
+    "to-go punch",
+    "vanguard"
   ],
 
   "debuffs": [
     // Update 1.0.4
-    "radaway",
     "addiction",
-    "the blight",
     "blood worms",
     "bone worms",
     "buzz brain",
@@ -130,14 +128,16 @@
     "needle spine",
     "parasites",
     "rad worms",
+    "radaway",
     "rattle hands",
     "shell shock",
     "sludge lung",
     "snot ear",
     "swamp gas",
     "swamp itch",
-    "weeping sores",
-    "the woopsies"
+    "the blight",
+    "the woopsies",
+    "weeping sores"
   ],
 
   "checklistCompareMode": "contains", // Options: starts, exact, contains (Update 1.2.4)
