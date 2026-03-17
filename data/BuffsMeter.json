@@ -35,7 +35,8 @@
 
   "disableRealTimeEdit": false, // Update 1.0.8
 
-  "hideSFEMessage": false,
+  // 1.4.1, HUDMODLOADER ONLY, DO NOT ENABLE THIS IF YOUR WIDGET IS LOADED IN OVERLAY LAYER - IT WILL STOP WORKING
+  "prioritizeHUDToolsSyncOverSFE": false,
 
   // PIPBOY SETTINGS (Update 1.1.6)
   "showAllPipboyTabs": true, // Update 1.2.0
