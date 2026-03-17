@@ -107,8 +107,8 @@
     <!--When aiming down iron sight-->
     <part state="SIGHT">
         <dot>
-            <enable>false</enable>
-            <size>2</size>
+            <enable>true</enable>
+            <size>1</size>
         </dot>
         <circle>
             <enable>false</enable>
