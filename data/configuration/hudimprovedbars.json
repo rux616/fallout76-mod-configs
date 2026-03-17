@@ -34,12 +34,12 @@
       // other.
       // DISABLE this if you have custom positions for these elements
       // When enabled, it will automatically align these elements to the left, on the X axis
-      "autoAlignLeftGroup": false,
+      "autoAlignLeftGroup": true,
       // By default, the bars disappear after a short time when they reach [value]>=[thirstBarsPercentIndefiniteShow]%.
       // This can be useful for players who want to keep an eye on their hunger and thirst levels without worrying
       // about the bars disappearing.
       // For example, if you set this to 50, the bars will stay visible until your hunger or thirst increases above 50%.
-      // Setting this to 100 makes it stay forever.  [Default game value: 20 Maximum value: 100]
+      // Setting this to 100 makes it stay forever.  [Default game value: 0.2 Maximum value: 1.0]
       "thirstBarsPercentIndefiniteShow": 100,
       // Whether to show hunger and thirst icons next to the bars. [Available values: true/false]
       "showHungerThirstIcons": true,
@@ -51,7 +51,7 @@
       // true/false]
       // ShowDebug is not yet implemented. It will be implemented in the future, but for now, it does nothing.
       "debugSettings": {
-        // Enable debug mode
+        // Enable debug mode. do not use this
         "showDebug": false,
         // Show a message when mod is initialized
         "showModInitializationMessage": true,
@@ -224,23 +224,9 @@
                 "labelcolor": "#FFFFCA"
               },
               {
-                "enabled": false,
-                "pattern": "/some regex here/",
-                "label": "Whatever",
-                "valuecolor": "#66ACB7",
-                "labelcolor": "#FFFFCA"
-              },
-              {
-                "enabled": false,
-                "pattern": "",
-                "label": "Everything",
-                "valuecolor": "#66ACB7",
-                "labelcolor": "#FFFFCA"
-              },
-              {
-                "enabled": false,
-                "pattern": "",
-                "label": "Everything",
+                "enabled": true,
+                "pattern": "/Technical Data/",
+                "label": "Technical Data",
                 "valuecolor": "#66ACB7",
                 "labelcolor": "#FFFFCA"
               }
