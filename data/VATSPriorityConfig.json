@@ -55,17 +55,17 @@
       { "partName": "TORSO", "hasCenterMasochist": true, "minHitChance": 1 },
       { "partName": "ARM", "minHitChance": 1 }
     ],
-    "GRIMM BOT": [
+    "GRIMM BOT" /* sentry bot */: [
       { "partName": "FUSION CORE", "minHitChance": 5 },
       { "partName": "TORSO", "hasCenterMasochist": true, "minHitChance": 1 },
       { "partName": "ARM", "minHitChance": 1 }
     ],
-    "SHERIFF BOT": [
+    "SHERIFF BOT" /* sentry bot */: [
       { "partName": "FUSION CORE", "minHitChance": 5 },
       { "partName": "TORSO", "hasCenterMasochist": true, "minHitChance": 1 },
       { "partName": "ARM", "minHitChance": 1 }
     ],
-    "SECURITY ROBOT": [
+    "SECURITY ROBOT" /* sentry bot */: [
       { "partName": "FUSION CORE", "minHitChance": 5 },
       { "partName": "TORSO", "hasCenterMasochist": true, "minHitChance": 1 },
       { "partName": "ARM", "minHitChance": 1 }
@@ -83,6 +83,10 @@
       { "partName": "EYE", "minHitChance": 1 }
     ],
     "HANDY": [
+      { "partName": "THRUSTER", "minHitChance": 1 },
+      { "partName": "EYE", "minHitChance": 1 }
+    ],
+    "FARMHAND" /* mr handy */: [
       { "partName": "THRUSTER", "minHitChance": 1 },
       { "partName": "EYE", "minHitChance": 1 }
     ],
@@ -115,11 +119,11 @@
       { "partName": "BACK PANEL", "minHitChance": 25 },
       { "partName": "ANTENNA", "minHitChance": 1 }
     ],
-    "EYEBOMB": [
+    "EYEBOMB" /* eyebot */: [
       { "partName": "BACK PANEL", "minHitChance": 25 },
       { "partName": "ANTENNA", "minHitChance": 1 }
     ],
-    "REPAIR BOT": [
+    "REPAIR BOT" /* eyebot */: [
       { "partName": "BACK PANEL", "minHitChance": 25 },
       { "partName": "ANTENNA", "minHitChance": 1 }
     ],
@@ -131,7 +135,7 @@
       { "partName": "TORSO", "hasCenterMasochist": true, "minHitChance": 1 },
       { "partName": "LEFT LEG", "minHitChance": 1 }
     ],
-    "IMPOSTER SHEEPSQUATCH": [
+    "IMPOSTER SHEEPSQUATCH" /* assaultron */: [
       { "partName": "TORSO", "hasCenterMasochist": true, "minHitChance": 1 },
       { "partName": "RIGHT LEG", "notCrippled": true, "minHitChance": 1 },
       { "partName": "LEFT LEG", "minHitChance": 1 }
@@ -154,7 +158,7 @@
       { "partName": "LEFT LEG", "notCrippled": true, "minHitChance": 1 },
       { "partName": "BELLY", "minHitChance": 1 }
     ],
-    "DEATHCLAW HANDLER": [
+    "DEATHCLAW HANDLER" /* human */: [
       { "partName": "HEAD", "minHitChance": 70 },
       { "partName": "TORSO", "hasCenterMasochist": true, "minHitChance": 70 },
       { "minHitChance": 80 },
@@ -169,14 +173,12 @@
       { "partName": "SPOUTS", "minHitChance": 1 },
       { "partName": "LEG", "minHitChance": 1 }
     ],
-    "STRANGLER QUEEN": [
+    "STRANGLER QUEEN" /* mirelurk queen */: [
       { "partName": "SPOUTS", "minHitChance": 1 },
       { "partName": "LEG", "minHitChance": 1 }
     ],
-    "ALIEN DRONE": [{ "partName": "BODY" }],
-    "CAPTAIN ALPHA": [{ "partName": "BODY" }],
-    "CAPTAIN OMEGA": [{ "partName": "BODY" }],
-    "ALIEN INVADER": [{ "partName": "TORSO" }],
-    "GENERAL ZETA": [{ "partName": "TORSO" }]
+    "ALIEN DRONE": [{ "partName": "HEAD", "minHitChance": 1 }],
+    "CAPTAIN ALPHA" /* alien drone */: [{ "partName": "HEAD", "minHitChance": 1 }],
+    "CAPTAIN OMEGA" /* alien drone */: [{ "partName": "HEAD", "minHitChance": 1 }]
   }
 }
