@@ -376,7 +376,7 @@
   },
   "lootConfig": {
     "testRun": false,
-    "name": "AutoLoot",
+    "name": "AutoLoot5",
     "enabled": true,
     "debug": false,
     "showButton": true,
@@ -386,44 +386,9 @@
     "delay": 50,
     "transferLegendaries": [1, 2, 3, 4, 5],
     "transferTaggedForSearch": true,
-    "matchMode": "CONTAINS",
-    "itemNames": [
-      "cap",
-      "bobby pin",
-      "cell",
-      "cartridge",
-      "fuel",
-      ".45",
-      "5.56",
-      "stimpak",
-      "mentats",
-      "psycho",
-      "med-x",
-      "radaway",
-      "rad-x",
-      "priest pack",
-      "pail",
-      "bag",
-      "gift"
-    ],
-    "configs": [
-      {
-        "enabled": true,
-        "checkAccountName": false,
-        "accountName": "none",
-        "checkCharacterName": true,
-        "characterName": "Zelia",
-        "itemNames": ["railway spike"]
-      },
-      {
-        "enabled": false,
-        "checkAccountName": true,
-        "accountName": ["acc 1", "acc 2"],
-        "checkCharacterName": true,
-        "characterName": ["char 1", "char 2"],
-        "itemNames": ["item 1", "item 2", "..."]
-      }
-    ]
+    "types": ["AMMO", "AID", "APPAREL", "JUNK", "ARMOR", "WEAPON", "MISC"],
+    "matchMode": "NOT_EXACT",
+    "itemNames": ["_"]
   },
   "scrapConfig": {
     "testRun": true,
@@ -692,30 +657,25 @@
     },
     // aid
     {
-      "testRun": false,
       "name": "Restock Aid",
       "enabled": true,
       "debug": false,
       "showButton": true,
-      "showMessage": false,
       "hotkey": "1",
       "checkContainerName": true,
       "containerName": ["AID STORAGE BOX"],
       "types": ["AID"],
       "matchMode": "EXACT",
       "direction": "FROM_CONTAINER",
-      "transferFavorite": true,
       "exactAmountInDestination": true,
       "amount": 30,
       "itemNames": ["Stimpak"]
     },
     {
-      "testRun": false,
       "name": "Restock Aid",
       "enabled": true,
       "debug": false,
       "showButton": false,
-      "showMessage": false,
       "hotkey": "1",
       "checkContainerName": true,
       "containerName": ["AID STORAGE BOX"],
@@ -727,12 +687,10 @@
       "itemNames": ["Addictol", "Antibiotics", "Disease Cure"]
     },
     {
-      "testRun": false,
       "name": "Restock Aid",
       "enabled": true,
       "debug": false,
       "showButton": false,
-      "showMessage": false,
       "hotkey": "1",
       "checkContainerName": true,
       "containerName": ["AID STORAGE BOX"],
@@ -741,24 +699,36 @@
       "direction": "FROM_CONTAINER",
       "exactAmountInDestination": true,
       "amount": 3,
-      "itemNames": ["Rad-X", "RadAway", "RadAway: Diluted"]
+      "itemNames": ["Rad-X"]
     },
     {
-      "testRun": false,
       "name": "Restock Aid",
       "enabled": true,
       "debug": false,
       "showButton": false,
-      "showMessage": false,
+      "hotkey": "1",
+      "checkContainerName": true,
+      "containerName": ["AID STORAGE BOX"],
+      "types": ["AID"],
+      "matchMode": "EXACT",
+      "direction": "FROM_CONTAINER",
+      "exactAmountInDestination": true,
+      "amount": 10,
+      "itemNames": ["RadAway"]
+    },
+    {
+      "name": "Restock Aid",
+      "enabled": true,
+      "debug": false,
+      "showButton": false,
       "hotkey": "1",
       "checkContainerName": true,
       "containerName": ["AID STORAGE BOX"],
       "types": ["AID"],
       "matchMode": "NOT_EXACT",
       "direction": "TO_CONTAINER",
-      "delay": 30,
       "amount": 0, // all
-      "itemNames": ["Stimpak", "Addictol", "Antibiotics", "Disease Cure", "Rad-X", "RadAway", "RadAway: Diluted"]
+      "itemNames": ["Addictol", "Antibiotics", "Disease Cure", "Rad-X", "RadAway", "Stimpak"]
     },
     // ammo
     {
@@ -775,7 +745,7 @@
       "matchMode": "EXACT",
       "direction": "FROM_CONTAINER",
       "exactAmountInDestination": true,
-      "amount": 140,
+      "amount": 147,
       "itemNames": [".50 Round"]
     },
     {
@@ -792,24 +762,7 @@
       "matchMode": "EXACT",
       "direction": "FROM_CONTAINER",
       "exactAmountInDestination": true,
-      "amount": 160,
-      "itemNames": ["Shotgun Shell"]
-    },
-    {
-      "testRun": false,
-      "name": "Restock Ammo",
-      "enabled": true,
-      "debug": false,
-      "showButton": false,
-      "showMessage": false,
-      "hotkey": "1",
-      "checkContainerName": true,
-      "containerName": ["AMMO STORAGE BOX"],
-      "types": ["AMMO"],
-      "matchMode": "EXACT",
-      "direction": "FROM_CONTAINER",
-      "exactAmountInDestination": true,
-      "amount": 120,
+      "amount": 126,
       "itemNames": ["Ultracite .308 Round"]
     },
     {
@@ -826,7 +779,7 @@
       "matchMode": "EXACT",
       "direction": "FROM_CONTAINER",
       "exactAmountInDestination": true,
-      "amount": 470,
+      "amount": 80,
       "itemNames": ["Ultracite .45 Round"]
     },
     {
@@ -843,7 +796,24 @@
       "matchMode": "EXACT",
       "direction": "FROM_CONTAINER",
       "exactAmountInDestination": true,
-      "amount": 60,
+      "amount": 126,
+      "itemNames": ["Ultracite .50 Round"]
+    },
+    {
+      "testRun": false,
+      "name": "Restock Ammo",
+      "enabled": true,
+      "debug": false,
+      "showButton": false,
+      "showMessage": false,
+      "hotkey": "1",
+      "checkContainerName": true,
+      "containerName": ["AMMO STORAGE BOX"],
+      "types": ["AMMO"],
+      "matchMode": "EXACT",
+      "direction": "FROM_CONTAINER",
+      "exactAmountInDestination": true,
+      "amount": 66,
       "itemNames": ["Camera Film"]
     },
     {
@@ -868,7 +838,24 @@
       "name": "Restock Ammo",
       "enabled": true,
       "debug": false,
-      "showButton": true,
+      "showButton": false,
+      "showMessage": false,
+      "hotkey": "1",
+      "checkContainerName": true,
+      "containerName": ["AMMO STORAGE BOX"],
+      "types": ["AMMO"],
+      "matchMode": "EXACT",
+      "direction": "FROM_CONTAINER",
+      "exactAmountInDestination": true,
+      "amount": 210,
+      "itemNames": ["Ultracite Fusion Cell"]
+    },
+    {
+      "testRun": false,
+      "name": "Restock Ammo",
+      "enabled": true,
+      "debug": false,
+      "showButton": false,
       "showMessage": false,
       "hotkey": "1",
       "checkContainerName": true,
@@ -876,15 +863,16 @@
       "types": ["AMMO"],
       "matchMode": "NOT_EXACT",
       "direction": "TO_CONTAINER",
-      "delay": 30,
+      "delay": 50,
       "amount": 0, // all
       "itemNames": [
         ".50 Round",
-        "Shotgun Shell",
+        "Camera Film",
+        "Fusion Core",
         "Ultracite .308 Round",
         "Ultracite .45 Round",
-        "Camera Film",
-        "Fusion Core"
+        "Ultracite .50 Round",
+        "Ultracite Fusion Cell"
       ]
     }
   ],
