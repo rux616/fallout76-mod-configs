@@ -376,7 +376,7 @@
   },
   "lootConfig": {
     "testRun": false,
-    "name": "AutoLoot5",
+    "name": "AutoLoot",
     "enabled": true,
     "debug": false,
     "showButton": true,
