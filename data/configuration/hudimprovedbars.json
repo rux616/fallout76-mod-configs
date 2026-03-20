@@ -126,7 +126,7 @@
             // you move each item individually.
             "vertical": true,
             "x": -90,
-            "y": -80
+            "y": -98
           },
           "cores": {
             // Whether to display the number of fusion cores. [Available values: true/false]
