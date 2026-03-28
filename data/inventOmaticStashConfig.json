@@ -384,7 +384,7 @@
     "delay": 50,
     "transferLegendaries": [1, 2, 3, 4, 5],
     "transferTaggedForSearch": true,
-    "types": ["AMMO", "AID", "APPAREL", "JUNK", "ARMOR", "WEAPON", "MISC"],
+    "types": ["AID", "AMMO", "APPAREL", "ARMOR", "JUNK", "MISC", "WEAPON"],
     "matchMode": "NOT_EXACT",
     "itemNames": ["_"]
   },
