@@ -728,10 +728,10 @@
       "amount": 0, // all
       "itemNames": ["Addictol", "Antibiotics", "Disease Cure", "Rad-X", "RadAway", "Stimpak"]
     },
-    // ammo
+    // ammo: general
     {
       "testRun": false,
-      "name": "Restock Ammo",
+      "name": "Restock: General",
       "enabled": true,
       "debug": false,
       "showButton": true,
@@ -748,7 +748,7 @@
     },
     {
       "testRun": false,
-      "name": "Restock Ammo",
+      "name": "Restock: General",
       "enabled": true,
       "debug": false,
       "showButton": false,
@@ -765,7 +765,7 @@
     },
     {
       "testRun": false,
-      "name": "Restock Ammo",
+      "name": "Restock: General",
       "enabled": true,
       "debug": false,
       "showButton": false,
@@ -782,7 +782,7 @@
     },
     {
       "testRun": false,
-      "name": "Restock Ammo",
+      "name": "Restock: General",
       "enabled": true,
       "debug": false,
       "showButton": false,
@@ -799,7 +799,7 @@
     },
     {
       "testRun": false,
-      "name": "Restock Ammo",
+      "name": "Restock: General",
       "enabled": true,
       "debug": false,
       "showButton": false,
@@ -816,7 +816,7 @@
     },
     {
       "testRun": false,
-      "name": "Restock Ammo",
+      "name": "Restock: General",
       "enabled": true,
       "debug": false,
       "showButton": false,
@@ -833,7 +833,7 @@
     },
     {
       "testRun": false,
-      "name": "Restock Ammo",
+      "name": "Restock: General",
       "enabled": true,
       "debug": false,
       "showButton": false,
@@ -850,7 +850,7 @@
     },
     {
       "testRun": false,
-      "name": "Restock Ammo",
+      "name": "Restock: General",
       "enabled": true,
       "debug": false,
       "showButton": false,
@@ -867,7 +867,7 @@
     },
     {
       "testRun": false,
-      "name": "Restock Ammo",
+      "name": "Restock: General",
       "enabled": true,
       "debug": false,
       "showButton": false,
