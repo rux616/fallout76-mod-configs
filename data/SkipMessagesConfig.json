@@ -4,9 +4,9 @@
   "SkipDelay": 25,
 
   "SkipScrapComponentsView": {
-    "Enabled": false,
-    "Legendary": true,
-    "NonLegendary": true
+    "Enabled": true,
+    "Legendary": false,
+    "NonLegendary": false
   },
 
   "AutoUseRepairKit": true,
@@ -25,7 +25,8 @@
     // Few examples:
     // "Pay [0-9]{1,2} Caps to travel": 0
     // "Choose a travel point for": 1
-    "Pay [0-9]{1,2} Caps to travel": 0
+    "Pay [0-9]+ Caps to travel": 0,
+    "Are you sure you want to claim .* for [0-9]+ Tickets?": 0
   },
 
   "ChangeSelection": {
