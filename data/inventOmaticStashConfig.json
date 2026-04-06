@@ -811,7 +811,7 @@
       "matchMode": "EXACT",
       "direction": "FROM_CONTAINER",
       "exactAmountInDestination": true,
-      "amount": 66,
+      "amount": 12,
       "itemNames": ["Camera Film"]
     },
     {
@@ -892,6 +892,23 @@
       ]
     },
     // ammo: heavy gunner/raid
+    {
+      "testRun": false,
+      "name": "Restock: Heavy Gunner",
+      "enabled": true,
+      "debug": false,
+      "showButton": false,
+      "showMessage": false,
+      "hotkey": "2",
+      "checkContainerName": true,
+      "containerName": ["AMMO STORAGE BOX"],
+      "types": ["AMMO"],
+      "matchMode": "EXACT",
+      "direction": "FROM_CONTAINER",
+      "exactAmountInDestination": true,
+      "amount": 12,
+      "itemNames": ["Camera Film"]
+    },
     {
       "testRun": false,
       "name": "Restock: Heavy Gunner",
@@ -993,6 +1010,7 @@
       "delay": 50,
       "amount": 0, // all
       "itemNames": [
+        "Camera Film",
         "Fusion Core",
         "Syringer Ammo",
         "Ultracite .308 Round",
