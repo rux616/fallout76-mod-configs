@@ -1017,6 +1017,24 @@
         "Ultracite .50 Round",
         "Ultracite Fusion Cell"
       ]
+    },
+    // technical data
+    {
+      "testRun": false,
+      "name": "Technical Data",
+      "enabled": true,
+      "debug": false,
+      "showButton": false,
+      "showMessage": false,
+      "hotkey": "/",
+      "checkContainerName": true,
+      "containerName": ["MY STASH BOX (STASH)"],
+      "types": ["MISC"],
+      "matchMode": "EXACT",
+      "direction": "FROM_CONTAINER",
+      "exactAmountInDestination": true,
+      "amount": 1,
+      "itemNames": ["Technical Data"]
     }
   ],
   "extractConfig": {
