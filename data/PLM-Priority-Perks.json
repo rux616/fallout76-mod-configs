@@ -1,13 +1,13 @@
 {
   "priorityPerks": [
-    "ClassFreak",
-    "GoatLegs",
-    "GoodWithSalt",
-    "GunslingerMaster",
-    "HeavyGunner" /* Bullet Storm */,
-    "StarchedGenes",
-    "StrangeInNumbers",
-    "TravelAgent"
+    // "ClassFreak",
+    // "GoatLegs" /* agility */,
+    "GoodWithSalt" /* intelligence */
+    // "GunslingerMaster" /* agility */,
+    // "HeavyGunner" /* strength; Bullet Storm */,
+    // "StarchedGenes" /* endurance */,
+    // "StrangeInNumbers" /* charisma */,
+    // "TravelAgent" /* charisma */
   ],
   "allPerks": [
     "ActionBoyGirl",

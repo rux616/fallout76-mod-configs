@@ -126,6 +126,7 @@
     "glowing pustules",
     "heat flashes",
     "jelly fingers",
+    "life saver",
     "lock joint",
     "needle spine",
     "parasites",
@@ -340,8 +341,8 @@
     // "PerksMode",
     "Pipboy",
     "PowerArmor",
-    "RadialMenu",
+    "RadialMenu"
     // "SelfieMode",
-    "WorkshopMode"
+    // "WorkshopMode"
   ]
 }

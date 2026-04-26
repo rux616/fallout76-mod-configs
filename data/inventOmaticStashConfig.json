@@ -760,8 +760,8 @@
       "matchMode": "EXACT",
       "direction": "FROM_CONTAINER",
       "exactAmountInDestination": true,
-      "amount": 126,
-      "itemNames": ["Ultracite .308 Round"]
+      "amount": 84,
+      "itemNames": ["2mm Electromagnetic Cartridge"]
     },
     {
       "testRun": false,
@@ -777,8 +777,8 @@
       "matchMode": "EXACT",
       "direction": "FROM_CONTAINER",
       "exactAmountInDestination": true,
-      "amount": 80,
-      "itemNames": ["Ultracite .45 Round"]
+      "amount": 126,
+      "itemNames": ["Ultracite .308 Round"]
     },
     {
       "testRun": false,
@@ -882,11 +882,11 @@
       "amount": 0, // all
       "itemNames": [
         ".50 Round",
+        "2mm Electromagnetic Cartridge",
         "Camera Film",
         "Fusion Core",
         "Syringer Ammo",
         "Ultracite .308 Round",
-        "Ultracite .45 Round",
         "Ultracite .50 Round",
         "Ultracite Fusion Cell"
       ]
@@ -1018,7 +1018,7 @@
         "Ultracite Fusion Cell"
       ]
     },
-    // technical data
+    // technical data/wanted poster
     {
       "testRun": false,
       "name": "Technical Data",
@@ -1035,6 +1035,22 @@
       "exactAmountInDestination": true,
       "amount": 1,
       "itemNames": ["Technical Data"]
+    },
+    {
+      "testRun": false,
+      "name": "Technical Data",
+      "enabled": true,
+      "debug": false,
+      "showButton": false,
+      "showMessage": false,
+      "hotkey": "/",
+      "checkContainerName": true,
+      "containerName": ["MY STASH BOX (STASH)"],
+      "types": ["MISC"],
+      "matchMode": "CONTAINS",
+      "direction": "TO_CONTAINER",
+      "amount": 0,
+      "itemNames": ["Wanted Poster"]
     }
   ],
   "extractConfig": {

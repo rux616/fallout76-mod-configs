@@ -146,7 +146,7 @@
       { "partName": "LEFT LEG", "minHitChance": 1 }
     ],
     "VERTIBIRD": [{ "partName": "CABIN", "minHitChance": 1 }],
-    "EN06 GUARDIAN": [{ "partName": "ULTRAGENETIC SHIELD", "notCrippled": true, "minHitChance": 1 }, "TORSO"],
+    "EN06 GUARDIAN": [{ "partName": "ULTRAGENETIC SHIELD", "notCrippled": true }, "TORSO"],
     "GRAFTON MONSTER": [
       { "partName": "BLOWHOLE", "minHitChance": 1 },
       { "partName": "TORSO", "hasCenterMasochist": true, "minHitChance": 1 },

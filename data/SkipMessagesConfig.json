@@ -19,7 +19,8 @@
     // "$Loaded_Into_Nuke_Zone": 0,
     // "Exit Station?": 1,
     "Exit Station?": 1,
-    ".....": 0
+    ".....": 0,
+    "You have properly loaded the Viable Scorchbeast DNA into the automated centrifuge.": 0
   },
   "SkipCustomRegex": {
     // Few examples:

@@ -1265,6 +1265,7 @@
     "ContainerMode",
     "DialogueMode",
     "ExamineConfirmMode",
+    "Fishing",
     "InspectMode",
     "LegendaryPerksMode",
     "MapMenu",
