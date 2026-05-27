@@ -12,7 +12,7 @@
   "topSortFriends": [],
   "hudModLoader": [
     // this is a long comment to force multi-line formatting in the json file so it is easier to edit
-    "BuffsMeter",
+    // "BuffsMeter",
     "QuickActions",
     "HUDChallenges"
   ],
