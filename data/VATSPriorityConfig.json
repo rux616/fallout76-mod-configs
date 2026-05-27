@@ -131,8 +131,8 @@
       { "partName": "LEFT", "notCrippled": true, "minHitChance": 1 },
       { "partName": "RIGHT", "notCrippled": true, "minHitChance": 1 },
       { "partName": "TORSO", "notCrippled": true, "minHitChance": 1 },
-      { "partName": "TORSO", "hasCenterMasochist": true },
-      { "partName": "GLASS", "minHitChance": 1 }
+      { "partName": "GLASS", "minHitChance": 70 },
+      { "partName": "TORSO", "hasCenterMasochist": true }
     ],
     "EYEBOT": [
       { "partName": "BACK PANEL", "minHitChance": 25 },
