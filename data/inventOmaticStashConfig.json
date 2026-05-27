@@ -760,59 +760,25 @@
       "matchMode": "EXACT",
       "direction": "FROM_CONTAINER",
       "exactAmountInDestination": true,
-      "amount": 84,
-      "itemNames": ["2mm Electromagnetic Cartridge"]
-    },
-    {
-      "testRun": false,
-      "name": "Restock: General",
-      "enabled": true,
-      "debug": false,
-      "showButton": false,
-      "showMessage": false,
-      "hotkey": "1",
-      "checkContainerName": true,
-      "containerName": ["AMMO STORAGE BOX"],
-      "types": ["AMMO"],
-      "matchMode": "EXACT",
-      "direction": "FROM_CONTAINER",
-      "exactAmountInDestination": true,
-      "amount": 126,
-      "itemNames": ["Ultracite .308 Round"]
-    },
-    {
-      "testRun": false,
-      "name": "Restock: General",
-      "enabled": true,
-      "debug": false,
-      "showButton": false,
-      "showMessage": false,
-      "hotkey": "1",
-      "checkContainerName": true,
-      "containerName": ["AMMO STORAGE BOX"],
-      "types": ["AMMO"],
-      "matchMode": "EXACT",
-      "direction": "FROM_CONTAINER",
-      "exactAmountInDestination": true,
-      "amount": 126,
-      "itemNames": ["Ultracite .50 Round"]
-    },
-    {
-      "testRun": false,
-      "name": "Restock: General",
-      "enabled": true,
-      "debug": false,
-      "showButton": false,
-      "showMessage": false,
-      "hotkey": "1",
-      "checkContainerName": true,
-      "containerName": ["AMMO STORAGE BOX"],
-      "types": ["AMMO"],
-      "matchMode": "EXACT",
-      "direction": "FROM_CONTAINER",
-      "exactAmountInDestination": true,
       "amount": 12,
       "itemNames": ["Camera Film"]
+    },
+    {
+      "testRun": false,
+      "name": "Restock: General",
+      "enabled": true,
+      "debug": false,
+      "showButton": false,
+      "showMessage": false,
+      "hotkey": "1",
+      "checkContainerName": true,
+      "containerName": ["AMMO STORAGE BOX"],
+      "types": ["AMMO"],
+      "matchMode": "EXACT",
+      "direction": "FROM_CONTAINER",
+      "exactAmountInDestination": true,
+      "amount": 264,
+      "itemNames": ["Fusion Cell"]
     },
     {
       "testRun": false,
@@ -845,8 +811,8 @@
       "matchMode": "EXACT",
       "direction": "FROM_CONTAINER",
       "exactAmountInDestination": true,
-      "amount": 210,
-      "itemNames": ["Ultracite Fusion Cell"]
+      "amount": 15,
+      "itemNames": ["Syringer Ammo"]
     },
     {
       "testRun": false,
@@ -862,8 +828,25 @@
       "matchMode": "EXACT",
       "direction": "FROM_CONTAINER",
       "exactAmountInDestination": true,
-      "amount": 15,
-      "itemNames": ["Syringer Ammo"]
+      "amount": 750,
+      "itemNames": ["Ultracite .50 Round"]
+    },
+    {
+      "testRun": false,
+      "name": "Restock: General",
+      "enabled": true,
+      "debug": false,
+      "showButton": false,
+      "showMessage": false,
+      "hotkey": "1",
+      "checkContainerName": true,
+      "containerName": ["AMMO STORAGE BOX"],
+      "types": ["AMMO"],
+      "matchMode": "EXACT",
+      "direction": "FROM_CONTAINER",
+      "exactAmountInDestination": true,
+      "amount": 210,
+      "itemNames": ["Ultracite Fusion Cell"]
     },
     {
       "testRun": false,
@@ -882,11 +865,10 @@
       "amount": 0, // all
       "itemNames": [
         ".50 Round",
-        "2mm Electromagnetic Cartridge",
         "Camera Film",
+        "Fusion Cell",
         "Fusion Core",
         "Syringer Ammo",
-        "Ultracite .308 Round",
         "Ultracite .50 Round",
         "Ultracite Fusion Cell"
       ]
