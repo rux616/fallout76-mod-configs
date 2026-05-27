@@ -41,6 +41,12 @@
   "useTargetNames": true, // Requires HUDModLoader + HUDTools
 
   "defaultPriority": [
+    // crippling challenges -->
+    // { "partName": "LEFT ARM", "notCrippled": true, "minHitChance": 1 },
+    // { "partName": "RIGHT ARM", "notCrippled": true, "minHitChance": 1 },
+    // { "partName": "LEFT LEG", "notCrippled": true, "minHitChance": 1 },
+    // { "partName": "RIGHT LEG", "notCrippled": true, "minHitChance": 1 },
+    // crippling challenges <--
     { "partName": "HEAD", "minHitChance": 70 },
     { "partName": "TORSO", "hasCenterMasochist": true, "minHitChance": 70 },
     { "minHitChance": 80 },
@@ -50,6 +56,19 @@
     { "minHitChance": 1 }
   ],
   "priorities": {
+    // // crippling challenge -->
+    // "SPOOKY SCORCHED": [
+    //   { "partName": "LEFT LEG", "notCrippled": true, "minHitChance": 1 },
+    //   { "partName": "RIGHT LEG", "notCrippled": true, "minHitChance": 1 },
+    //   { "partName": "HEAD", "minHitChance": 70 },
+    //   { "partName": "TORSO", "hasCenterMasochist": true, "minHitChance": 70 },
+    //   { "minHitChance": 80 },
+    //   { "minHitChance": 60 },
+    //   { "minHitChance": 40 },
+    //   { "minHitChance": 20 },
+    //   { "minHitChance": 1 }
+    // ],
+    // // crippling challenge <-- */
     "SENTRY BOT": [
       { "partName": "FUSION CORE", "minHitChance": 5 },
       { "partName": "TORSO", "hasCenterMasochist": true, "minHitChance": 1 },
